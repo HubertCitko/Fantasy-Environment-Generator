@@ -2,20 +2,20 @@ import google.generativeai as genai
 import json
 import random
 import time
-
-genai.configure(api_key="YOUR_API_KEY")
+genai.configure(api_key="AIzaSyASSwTtnGrndJ37Cr7-Fn9ZlQtVROn_Va0")
 
 
 #Creates a cumulative chance table from a list of chances
 def makeChanceTable(chanceList):
-    chanceList.sort(key=lambda x: x[1])
+    chanceList = sorted(chanceList, key=lambda x: x[1])
+    cumulative = 0
     newList = []
-    for i in range(len(chanceList)):
-        if chanceList[i][1] == 0 or i == 0 : continue
-        else:
-            newList.append([chanceList[i][0], chanceList[i][1] + chanceList[i-1][1]])
+    for value, chance in chanceList:
+        if chance == 0:
+            continue
+        cumulative += chance
+        newList.append([value, cumulative])
     return newList
-
 # Chooses a random property or properties from the given JSON string based on the chances provided
 def chooseRandomProperty(data_string):
    
@@ -50,6 +50,16 @@ def chooseRandomProperty(data_string):
     return ', '.join(answers) if answers else "None"
 
 
+def create_model(model_name="models/gemini-2.5-flash", temperature=1.0, top_p=0.95, max_tokens=4096):
+    generation_config = genai.types.GenerationConfig(
+        temperature=temperature,
+        top_p=top_p,
+        max_output_tokens=max_tokens,
+    )
+    return genai.GenerativeModel(
+        model_name=model_name,
+        generation_config=generation_config
+    )
 
 def chooseParameter(data, description):
     # Wait for a few seconds to avoid rate limiting
@@ -66,19 +76,10 @@ I need you to create a probability table based on the given description and new 
     { "value": "property5", "chance": x5 },
     { "combination_value": "y1"},
 ]
-New propoperties: """ + data + """
-"""
+New propoperties: """ + data
     #Model setup
-    generation_config = genai.types.GenerationConfig(
-        temperature=1.0,
-        top_p=0.95,
-        max_output_tokens=1024,
-    )
     try:
-        model = genai.GenerativeModel(
-            model_name="models/gemini-2.5-flash-lite-preview-06-17",
-            generation_config=generation_config
-        )
+        model = create_model(model_name="models/gemini-2.5-flash-lite-preview-06-17", max_tokens=1024) 
         response = model.generate_content(prompt)
         return chooseRandomProperty(response.text)
     except Exception as e:
@@ -101,16 +102,8 @@ Raw Data: \n"""+ rawDescription + """
 """
 
     #Model setup
-    generation_config = genai.types.GenerationConfig(
-        temperature=1.1,
-        top_p=0.95,
-        max_output_tokens=4096*2,
-    )
     try:
-        model = genai.GenerativeModel(
-            model_name="models/gemini-2.5-flash",
-            generation_config=generation_config
-        )
+        model = create_model(model_name="models/gemini-2.5-flash", max_tokens= 8194, temperature=1.1)
         response = model.generate_content(prompt)
         return response.text
     except Exception as e:
@@ -132,7 +125,7 @@ The English text should be visible by default when the page loads. The Polish te
 2. CSS Styling:
 Embed the provided CSS code directly into the <head> section of the HTML file, inside <style> tags. Do not link to an external stylesheet.
 3. Content and Translation:
-Take the provided English Description and place it inside the <div id="english-text"> container. Use appropriate HTML tags for structure (e.g., <h1> for a title like "The Whispering Fens", and <p> for each paragraph).
+Take the provided English Description and place it inside the <div id="english-text"> container. Use appropriate HTML tags for structure (e.g., <h1>, <h2>, <p>).
 Translate the entire English description accurately into Polish.
 Place the translated Polish text inside the <div id="polish-text"> container, using the same HTML structure as the English version.
 4. JavaScript Functionality:
@@ -191,17 +184,9 @@ Generated css
 English Description to Use (and Translate):""" + description 
 
     #Model setup
-    generation_config = genai.types.GenerationConfig(
-        temperature=1.1,
-        top_p=0.95,
-        max_output_tokens=4096*2,
-    )
     try:
-        model = genai.GenerativeModel(
-            model_name="models/gemini-2.5-flash",
-            generation_config=generation_config)
+        model = create_model(model_name="models/gemini-2.5-flash", temperature=1.1, max_tokens=8194)
         response = model.generate_content(prompt)
-        print("HTML: ", response.text)
         filename = "FinalDescription.html"
         open(filename, "w", encoding="utf-8").write(response.text)
         with open(filename, "r", encoding="utf-8") as file:
@@ -217,7 +202,7 @@ with open('EnvironmentData.json', 'r', encoding='utf-8') as plik:
     dane = json.load(plik)
 
 possibleClimate = ["Equatorial","Tropical","Sub-tropical","Temperate","Sub-arctic","Arctic","Polar"]
-description = f"Climate: {possibleClimate[random.randint(0, len(possibleClimate) - 1)]} \n"
+description = f"Climate: {random.choice(possibleClimate)} \n"
 allParamsSum = 0
 paramsDone = 0
 for category in dane:
