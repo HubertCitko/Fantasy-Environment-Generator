@@ -61,7 +61,7 @@ def create_model(model_name="models/gemini-2.5-flash", temperature=1.0, top_p=0.
         generation_config=generation_config
     )
 
-def chooseParameter(data, description):
+def chooseProperty(data, description):
     # Wait for a few seconds to avoid rate limiting
     time.sleep(4.5) 
 
@@ -90,7 +90,7 @@ New propoperties: """ + data
 def createFinalDescription(rawDescription):
     prompt = """
 You are a master world-builder and descriptive writer, akin to authors like Tolkien or Le Guin. Your task is to synthesize the following raw data points into a rich, evocative, and cohesive description of a fantasy environment.
-Do not simply list the parameters. Instead, weave them together into immersive prose, focusing on sensory details and the overall mood. Follow this specific structure for your description:
+Do not simply list the properties. Instead, weave them together into immersive prose, focusing on sensory details and the overall mood. Follow this specific structure for your description:
 Structure to Follow:
 Opening Paragraph: The First Impression. Start with a broad, atmospheric overview. Establish the most defining features of the environment, such as the perpetual twilight, the overall climate, and the first things a visitor would see and feel. Set the scene and the mood.
 Paragraph 2: The Ground Beneath Your Feet. Focus on the landscape and geology. Describe the topography (swamps, lowlands) and what the ground is made of (basalt, petrified wood, silty soil). Seamlessly integrate the "Unnatural Formations" (Crystalline Spires) into this description, highlighting how they contrast or interact with the natural landscape.
@@ -203,22 +203,22 @@ with open('EnvironmentData.json', 'r', encoding='utf-8') as plik:
 
 possibleClimate = ["Equatorial","Tropical","Sub-tropical","Temperate","Sub-arctic","Arctic","Polar"]
 description = f"Climate: {random.choice(possibleClimate)} \n"
-allParamsSum = 0
-paramsDone = 0
+allPropertySum = 0
+propertiesDone = 0
 for category in dane:
-    for parameter in dane[category]:
-        allParamsSum += 1
+    for property in dane[category]:
+        allPropertySum += 1
 
 for category in dane:
     description += f"{category}:\n"
-    for parameter in dane[category]:
-        values = dane[category][parameter]  
+    for property in dane[category]:
+        values = dane[category][property]  
         dataText = ", ".join(values)        
 
-        print(f"Generating chances for parameter: {parameter} " + f"[{round((paramsDone/allParamsSum)*100, 2)}]%")
-        result = chooseParameter(dataText, description)
-        description += f"   {parameter}: {result}\n"
-        paramsDone += 1
+        print(f"Generating chances for property: {property} " + f"[{round((propertiesDone/allPropertySum)*100, 2)}]%")
+        result = chooseProperty(dataText, description)
+        description += f"   {property}: {result}\n"
+        propertiesDone += 1
     description += "\n"
 
 print("Creating final description...")
