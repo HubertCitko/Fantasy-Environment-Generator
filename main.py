@@ -2,7 +2,7 @@ import google.generativeai as genai
 import json
 import random
 import time
-genai.configure(api_key="AIzaSyASSwTtnGrndJ37Cr7-Fn9ZlQtVROn_Va0")
+genai.configure(api_key="YOUR_API_KEY")
 
 
 #Creates a cumulative chance table from a list of chances
