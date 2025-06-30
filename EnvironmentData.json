@@ -1,0 +1,380 @@
+{
+  "Foundational & Geological Parameters": {
+    "Topography & Landforms": [
+      "Plains",
+      "Hills",
+      "Mountains",
+      "Plateaus",
+      "Mesas",
+      "Buttes",
+      "Canyons",
+      "Icebergs",
+      "Cliffs",
+      "Valleys",
+      "Badlands",
+      "Dunes",
+      "Archipelagos",
+      "Peninsulas",
+      "Fjords",
+      "Glaciers",
+      "Swamps",
+      "Marshes",
+      "Fens",
+      "Bogs",
+      "Cave Systems",
+      "Volcanoes",
+      "Geyser Fields",
+      "Salt Flats",
+      "Sinkholes",
+      "Calderas"
+    ],
+    "Altitude/Elevation": [
+      "Sea Level",
+      "Lowlands",
+      "Uplands",
+      "Highlands",
+      "Mountains",
+      "High Plateau",
+      "Subterranean",
+      "Abyssal",
+      "Floating Islands",
+      "Sky-level"
+    ],
+    "Geology & Bedrock": [
+      "Granite",
+      "Limestone",
+      "Sandstone",
+      "Basalt",
+      "Slate",
+      "Marble",
+      "Obsidian",
+      "Pumice",
+      "Chalk",
+      "Petrified Bone",
+      "Compressed Ash",
+      "Fused Metal",
+      "Solidified Magic",
+      "Crystal Veins",
+      "Petrified Wood",
+      "Unidentifiable Stone"
+    ],
+    "Soil Type": [
+      "Fertile Loam",
+      "Rich Clay",
+      "Sandy",
+      "Silty",
+      "Peat",
+      "Chalky",
+      "Saline",
+      "Acidic",
+      "Barren Rock",
+      "Magically Enriched",
+      "Cursed Earth",
+      "Ash-covered",
+      "Spore-choked",
+      "Metallic Dust",
+      "Glassy/Vitrified"
+    ],
+    "Mineral & Resource Deposits": [
+      "None",
+      "Iron",
+      "Copper",
+      "Tin",
+      "Gold",
+      "Silver",
+      "Lead",
+      "Coal",
+      "Salt",
+      "Sulfur",
+      "Oil",
+      "Quartz",
+      "Diamonds",
+      "Rubies",
+      "Mythril",
+      "Adamantium",
+      "Orichalcum",
+      "Soulgems",
+      "Glowstones",
+      "Dragonshards",
+      "Mana Crystals"
+    ],
+    
+    "Unnatural Formations": [
+      "None",
+      "Impossible Arches",
+      "Geometric Formations",
+      "Giant-Carved Landscapes",
+      "Magic-Scarred Craters",
+      "Petrified Titans",
+      "Upended Earth",
+      "Crystalline Spires",
+      "Floating Rocks",
+      "Labyrinthine Gorges"
+    ],
+  
+    "Axial Tilt": [
+      "Normal (Defined Seasons)",
+      "No Tilt (No Seasons)",
+      "Slight Tilt (Mild Seasons)",
+      "Severe Tilt (Extreme Seasons)",
+      "Variable/Wobbling Tilt (Unpredictable Seasons)"
+    ]
+  },
+  "Climate & Atmospheric Parameters": {
+    "Average Temperature": [
+      "Frigid",
+      "Cold",
+      "Cool",
+      "Temperate",
+      "Warm",
+      "Hot",
+      "Scorching",
+      "Unnaturally Stable"
+    ],
+    "Temperature Range": [
+      "Normal (Seasonal & Diurnal)",
+      "Constant",
+      "Mild Variation",
+      "High Diurnal (Day/Night) Variation",
+      "Extreme Seasonal Variation"
+    ],
+    "Temperature Extremes": [
+      "None",
+      "Flash Freezes",
+      "Sudden Thaws",
+      "Superheated Pockets",
+      "Magical Cold/Heat Zones",
+      "Fire-Geysers"
+    ],
+    "Precipitation Amount": [
+      "Arid",
+      "Semi-Arid",
+      "Moderate",
+      "Wet",
+      "Deluge",
+      "None"
+    ],
+    "Precipitation Type": [
+      "Rain",
+      "Snow",
+      "Sleet",
+      "Hail",
+      "Mist",
+      "Dew",
+      "Ash Fall",
+      "Spore Fall",
+      "Gelatinous Slime",
+      "Liquid Light"
+    ],
+    "Precipitation Pattern": [
+      "Normal Seasonal",
+      "Constant Drizzle",
+      "Short Bursts",
+      "Infrequent but Violent",
+      "Predictable",
+      "Erratic"
+    ],
+    "Humidity": [
+      "Normal (Varies with Weather)",
+      "Arid/Dry",
+      "Low",
+      "Moderate",
+      "High",
+      "Saturated/Muggy"
+    ],
+    "Smell": [
+      "Normal (Varies)",
+      "Petrichor (Wet Earth)",
+      "Brine/Salt",
+      "Pine",
+      "Floral",
+      "Ozone",
+      "Sulfur/Brimstone",
+      "Metallic",
+      "Unnatural Perfume",
+      "Sickly Sweet",
+      "Aseptic/Sterile",
+      "No Smell"
+    ],
+    "Prevailing Winds": [
+      "Normal (Variable)",
+      "None (Stagnant)",
+      "Light Breeze",
+      "Strong Gusts",
+      "Constant Gales",
+      "Directional (Westerly, Polar, etc.)",
+      "Cyclonic",
+      "Erratic"
+    ],
+    "Storms": [
+      "Thunderstorms",
+      "Blizzards",
+      "None"
+    ],
+    "Fog & Mist": [
+      "None",
+      "Normal (Occasional)",
+      "Morning Mist",
+      "Ground Fog",
+      "Sea Fog",
+      "Permanent Fog"
+    ],
+    "Sunlight": [
+      "Normal",
+      "Harsh/Direct",
+      "Diffused/Overcast",
+      "Dappled",
+      "Perpetual Twilight",
+      "Perpetual Daylight",
+      "No Sunlight"
+    ]
+  },
+  "Flora": {
+    "Dominant Flora Type": [
+      "Deciduous Forest",
+      "Coniferous Forest",
+      "Rainforest",
+      "Grassland/Prairie",
+      "Savanna",
+      "Swamp",
+      "Tundra",
+      "Desert Scrub",
+      "Mangrove",
+      "Mushroom Forest",
+      "Crystal Forest",
+      "Petrified Forest",
+      "Kelp Forest"
+    ],
+    "Size & Scale": [
+      "Normal",
+      "Microscopic",
+      "Stunted/Dwarfed",
+      "Large",
+      "Gigantic",
+      "Colossal"
+    ],
+    "Luminosity": [
+      "None",
+      "Bioluminescent",
+      "Phosphorescent",
+      "Reflective",
+      "Absorbs Light",
+      "Glows in response to magic/sound"
+    ],
+    "Mobility": [
+      "Stationary (Normal)",
+      "Creeping",
+      "Spreading",
+      "Migratory"
+    ],
+    "Magical Properties": [
+      "None",
+      "Healing",
+      "Poisonous",
+      "Hallucinogenic"
+    ]
+  },
+  "Fauna": {
+    "Ecosystem & Food Web": [
+      "Normal",
+      "Complex",
+      "Simple",
+      "Predator-heavy",
+      "Scavenger-heavy",
+      "No Predators"
+    ],
+    "Apex Predators": [
+      "None",
+      "Normal (Wolves, Bears, Big Cats)",
+      "Dragon",
+      "Hydra",
+      "Roc",
+      "Manticore",
+      "Pack Hunter (Dire Wolves)",
+      "Solitary Hunter (Giant Cat)",
+      "Swarm (Insects)",
+      "Magical Construct",
+      "Abomination",
+      "Plant-based"
+    ],
+    "Dominant Animals": [
+      "Normal Mix",
+      "Herds",
+      "Flocks",
+      "Swarms",
+      "Packs",
+      "Shoals",
+      "Solitary Creatures"
+    ],
+    "Size & Scale": [
+      "Normal Range",
+      "Minuscule",
+      "Small",
+      "Large",
+      "Megafauna",
+      "Leviathan"
+    ],
+
+    "Innate Abilities": [
+      "Mundane",
+      "Venom",
+      "Poison",
+      "Camouflage",
+      "Flight",
+      "Teleportation",
+      "Sound Mimicry",
+      "Invisibility"
+    ]
+  },
+  "Sensory & Thematic Parameters": {
+    "Soundscape": [
+      "Normal (Wind, Animals, etc.)",
+      "Silent",
+      "Muffled",
+      "Roaring Water",
+      "Crackling (Fire/Ice)",
+      "Chimes"
+    ],
+    "Historical/Magical Aura": [
+      "None/Neutral",
+      "Melancholy",
+      "Joyful",
+      "Desecrated",
+      "Wild",
+      "Chaotic",
+      "Orderly",
+      "Ancient",
+      "Young",
+      "Pure",
+      "Corrupt"
+    ]
+  },
+  "Sapient Influence": {
+    "Ruins & Remnants": [
+      "None/Pristine",
+      "Towers",
+      "Castles",
+      "Aqueducts",
+      "Barrows/Tombs",
+      "Monoliths",
+      "Statues",
+      "Shipwrecks",
+      "Mines"
+    ],
+    "Current Inhabitants": [
+      "None/Uninhabited",
+      "Spirits",
+      "Monsters",
+      "Beasts"
+    ],
+    "Landmarks & Legends": [
+      "None",
+      "Named Mountain",
+      "Blessed Spring",
+      "Dragon's Lair",
+      "The Weeping Stones",
+      "The Titan's Grave",
+      "The Fallen Star Crater"
+    ]
+  }
+}
