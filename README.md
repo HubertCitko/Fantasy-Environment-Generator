@@ -1,6 +1,6 @@
 # Fantasy-Environment-Generator
 This project focuses on a Prompt Engineering and uses Gemini API. All code is written in Python and data is stored in JSON.
-We can divide whole process into the x steps
+We can divide whole process into the 5 steps
 ## Step 1 - Iterate through JSON and choose properties
 In the provided JSON there are categories that consist of properties.
 For example we have:<br>
