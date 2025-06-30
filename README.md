@@ -79,4 +79,4 @@ Now the program will just choose randomly a property based on the given chances,
 ## Step 4 - Make more detailed description
 Now we give the model prompt to change our raw description to something easier to read and with more depth. This will save to `FinalDescription.txt`
 ## Step 5 - Convert it to HTML
-We use the model again, this time to make a HTML website that has its text in two languages, English and Polish.
+We use the model again, this time to make a HTML website that has its text in two languages, English and Polish. This will save to `FinalDescription.html`
