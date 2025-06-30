@@ -1,0 +1,47 @@
+Climate: Equatorial 
+Foundational & Geological Parameters:
+   Topography & Landforms: Volcanoes
+   Altitude/Elevation: Lowlands, Sea Level
+   Geology & Bedrock: Basalt
+   Soil Type: Barren Rock, Ash-covered
+   Mineral & Resource Deposits: None
+   Unnatural Formations: Labyrinthine Gorges
+   Axial Tilt: Variable/Wobbling Tilt (Unpredictable Seasons)
+
+Climate & Atmospheric Parameters:
+   Average Temperature: Cold, Scorching
+   Temperature Range: Extreme Seasonal Variation, Constant
+   Temperature Extremes: Fire-Geysers
+   Precipitation Amount: Arid, Moderate
+   Precipitation Type: Ash Fall
+   Precipitation Pattern: Short Bursts, Erratic
+   Humidity: High
+   Smell: Sulfur/Brimstone
+   Prevailing Winds: Directional (Westerly)
+   Storms: None, Thunderstorms
+   Fog & Mist: None
+   Sunlight: Perpetual Twilight
+
+Flora:
+   Dominant Flora Type: Mangrove
+   Size & Scale: Large
+   Luminosity: Absorbs Light, Glows in response to magic/sound
+   Mobility: Spreading
+   Magical Properties: None
+
+Fauna:
+   Ecosystem & Food Web: Complex, Normal
+   Apex Predators: Solitary Hunter (Giant Cat)
+   Dominant Animals: Herds
+   Size & Scale: Large, Small
+   Innate Abilities: Sound Mimicry, Venom
+
+Sensory & Thematic Parameters:
+   Soundscape: Chimes, Normal Animals
+   Historical/Magical Aura: Melancholy
+
+Sapient Influence:
+   Ruins & Remnants: Monoliths, None/Pristine
+   Current Inhabitants: Beasts
+   Landmarks & Legends: The Fallen Star Crater, The Titan's Grave
+
